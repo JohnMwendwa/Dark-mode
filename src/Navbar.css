@@ -14,11 +14,11 @@
 .Navbar input[type="checkbox" ]{
    margin: 0 10px;
 }
-.dark{
+.Navbar.dark{
     color: #fff;
     background-color: #333;
 }
-.light{
+.Navbar.light{
     color: #000;
     background-color:#dddddd ;
 }

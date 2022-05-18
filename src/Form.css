@@ -41,7 +41,10 @@
     padding: 0 20px;
     outline: none;
     background: none;
-    z-index: 1;
+    z-index: 1; 
+  }
+  .Form.dark .Form-input{
+    color: #fff;
   }
   .Form-input:focus {
     border: 2px solid purple;
@@ -62,7 +65,7 @@
 
   /* Hide the placeholder texts (a) */
   ::placeholder {
-    color: transparent;
+    color:transparent;
   }
 
   .Form-input:not(:placeholder-shown)+ .label {

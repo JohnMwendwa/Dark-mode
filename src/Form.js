@@ -1,7 +1,7 @@
 import React,{useContext} from 'react'
 import { ThemeContext } from './contexts/ThemeContext';
 import { LanguageContext } from './contexts/LanguageContext';
-
+import './Form.css'
 
 const words = {
   english: {

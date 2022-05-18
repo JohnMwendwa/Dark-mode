@@ -1,12 +1,14 @@
 import React, { useContext } from 'react';
+import {ThemeContext} from './contexts/ThemeContext';
 import {LanguageContext} from './contexts/LanguageContext';
 
 
 export default function Navbar() {
-  const {isDarkMode} = useContext(LanguageContext)
+  const {language,changeLanguage} = useContext(LanguageContext);
+  const {isDarkMode,toggleTheme} = useContext(ThemeContext)
   return (
     <div className='Navbar' >
-      <select >
+      <select value={language} onChange={changeLanguage}>
         <option value="english">Kenya</option>
         <option value="french">France</option>
         <option value="spanish">Spain</option>
@@ -14,7 +16,7 @@ export default function Navbar() {
       
       <label htmlFor="checkbox">
         {isDarkMode? 'dark' :'light'}
-        <input type="checkbox"  />
+        <input type="checkbox"  onClick={toggleTheme} />
       </label>
     </div>
   )

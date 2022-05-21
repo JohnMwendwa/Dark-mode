@@ -38,7 +38,7 @@ export default function Form() {
         <label htmlFor="" className={isDarkMode?"label dark":"label light"}>{email}</label>
       </div>
 
-      <div class="inputContainer">
+      <div className="inputContainer">
         <input type="text" className="Form-input" placeholder="password" />
         <label htmlFor="" className={isDarkMode?"label dark":"label light"}>{password}</label>   
       </div>

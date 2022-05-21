@@ -1,9 +1,10 @@
-import React,{createContext,useState} from 'react'
+import React,{createContext} from 'react'
+import useLocalStorage from '../hooks/useLocalStorage';
 
 export const ThemeContext = createContext();
 
 export function ThemeProvider(props) {
-    const [isDarkMode,setIsDarkMode] = useState(false);
+    const [isDarkMode,setIsDarkMode] = useLocalStorage("Theme",false);
     const toggleTheme =()=>{
         setIsDarkMode(!isDarkMode);
     }
